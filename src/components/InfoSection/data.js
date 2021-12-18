@@ -1,5 +1,5 @@
 export const homeObjOne = {
-  id: 'about',
+  id: 'blog',
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -17,7 +17,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'discover',
+    id: 'resume',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -35,7 +35,7 @@ export const homeObjTwo = {
   };
 
   export const homeObjThree = {
-    id: 'signup',
+    id: 'personal',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -50,4 +50,22 @@ export const homeObjTwo = {
     dark: false,
     primary: false,
     darkText: true,
+  };
+
+  export const homeObjFour = {
+    id: 'contact',
+    lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Premium Bank',
+  headline: 'Unlimited transactions with zero fees',
+  description:
+    'Get access to our exclusive app that allows you to send unlinmited transactions without getting charged any fees.',
+  buttonLabel: 'Get started',
+  imgStart: false,
+  img: '/images/svg-1.svg',
+  alt: 'Car',
+  dark: true,
+  primary: true,
+  darkText: false,
   };

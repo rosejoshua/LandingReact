@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import {
@@ -11,7 +11,8 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink,
+  SocialIcons,
+  SocialIconLink
 } from './navbarElements';
 
 const Navbar = ({ toggle }) => {
@@ -39,7 +40,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>
-              dolla
+              Joshua Rose
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -47,55 +48,78 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to='about'
+                  to='projects'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
                 >
-                  About
+                  My Projects
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='discover'
+                  to='blog'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
                 >
-                  Discover
+                  Blog
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='services'
+                  to='resume'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
                 >
-                  Services
+                  Work History
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='signup'
+                  to='personal'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
                 >
-                  Sign Up
+                  Personal
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to='contact'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >
+                  Contact
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+              
+
+              <SocialIcons>
+              
+              <SocialIconLink href='https://github.com/rosejoshua' target='_blank' aria-label='Github'>
+                <FaGithub/>
+              </SocialIconLink>
+              <SocialIconLink href='https://www.linkedin.com/in/joshuaroseprofile/' target='_blank' aria-label='Linkedin'>
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+              
             </NavBtn>
           </NavbarContainer>
         </Nav>

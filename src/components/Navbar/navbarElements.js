@@ -114,3 +114,16 @@ text-decoration: none;
     color: #010606;
 }
 `
+
+
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
+  font-size: 32px;
+`;

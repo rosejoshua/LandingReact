@@ -11,6 +11,7 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
+  HeroImg,
 } from './heroElements';
 
 const HeroSection = () => {
@@ -26,14 +27,14 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroImg src='/images/headshot.jpg'/>
+        <HeroH1>Hello!</HeroH1>
         <HeroP>
-          Sign up for a new account today and receive $250 in credit toward your
-          next payment.
+          My name is Joshua Rose. I'm a software developer working out of Detroit, Michigan. 
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to='signup'
+            to='projects'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
@@ -44,7 +45,7 @@ const HeroSection = () => {
             exact='true'
             offset={-80}
           >
-            GetStarted {hover ? <ArrowForward /> : <ArrowRight />}
+            My Projects {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

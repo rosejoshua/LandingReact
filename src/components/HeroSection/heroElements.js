@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -57,6 +57,13 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
+export const HeroImg = styled.img`
+width: 300px;
+max-width: 50%;
+border-radius: 50%;
+margin-bottom: 30px;
+`
+
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
@@ -74,9 +81,10 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
+  line-height: 1.4em;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

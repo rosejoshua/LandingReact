@@ -8,8 +8,9 @@ import {
   homeObjOne,
   homeObjThree,
   homeObjTwo,
+  homeObjFour
 } from '../components/InfoSection/data';
-import Services from '../components/Services';
+import Services from '../components/Projects';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,11 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
+      <Services />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      <Services />
       <InfoSection {...homeObjThree} />
+      <InfoSection {...homeObjFour} />
       <Footer />
     </>
   );
