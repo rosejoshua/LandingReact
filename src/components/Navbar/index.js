@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
                   My Projects
                 </NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks
                   to='blog'
                   smooth={true}
@@ -69,7 +69,7 @@ const Navbar = ({ toggle }) => {
                 >
                   Blog
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLinks
                   to='resume'
@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={-80}
                 >
-                  Personal
+                  About Me
                 </NavLinks>
               </NavItem>
               <NavItem>

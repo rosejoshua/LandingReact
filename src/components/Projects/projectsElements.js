@@ -47,7 +47,7 @@ export const ProjectsCard = styled.div`
   border-radius: 20px;
   min-height: 330px;
   max-height: 340px;
-  padding: 30px;
+  /* padding: 30px; */
   /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
   transition: all 0.2s ease-in-out;
 
@@ -56,17 +56,17 @@ export const ProjectsCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
-`;
-
-export const ProjectsCardRed = styled(ProjectsCard)`
-  background: #ff9191;
-`;
-export const ProjectsCardAmber = styled(ProjectsCard)`
-  background: #ffd582;
-`;
-export const ProjectsCardGreen = styled(ProjectsCard)`
-  background: #a6f7b3;
-`;
+  `;
+  
+  export const ProjectsCardRed = styled(ProjectsCard)`
+    background: #ff9191;
+  `;
+  export const ProjectsCardAmber = styled(ProjectsCard)`
+    background: #ffd582;
+  `;
+  export const ProjectsCardGreen = styled(ProjectsCard)`
+    background: #a6f7b3;
+  `;
 
 export const ProjectsIcon = styled.img`
   height: 160px;
@@ -85,8 +85,23 @@ export const ProjectsH1 = styled.h1`
   }
 `;
 
+export const TitleWrapper = styled.div`
+  width: 100%;
+  background: #c2c2c2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+`;
+
+export const TextWrapper = styled.div`
+  width: 100%;
+  padding: 30px;
+`;
+
 export const ProjectsH2 = styled.h2`
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   text-align: center;
 `;

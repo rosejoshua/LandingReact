@@ -5,10 +5,9 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import {
-  homeObjOne,
   homeObjThree,
   homeObjTwo,
-  homeObjFour
+  homeObjFour,
 } from '../components/InfoSection/data';
 import Services from '../components/Projects';
 
@@ -25,7 +24,6 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <Services />
-      <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
