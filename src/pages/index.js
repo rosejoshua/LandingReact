@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
-import InfoSection from '../components/InfoSection';
+import WorkPage from '../components/WorkSection';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
+import About from '../components/About'
 import {
-  homeObjThree,
-  homeObjTwo,
-  homeObjFour,
-} from '../components/InfoSection/data';
+  workObjOne,
+} from '../components/WorkSection/data';
 import Services from '../components/Projects';
 
 const Home = () => {
@@ -24,9 +23,9 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <Services />
-      <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} />
-      <InfoSection {...homeObjFour} />
+      <WorkPage {...workObjOne}>
+      </WorkPage>
+      <About />
       <Footer />
     </>
   );
