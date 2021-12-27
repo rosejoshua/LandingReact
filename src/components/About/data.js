@@ -1,16 +1,3 @@
-export const homeObjOne = {
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'Premium Bank',
-  headline: 'Unlimited transactions with zero fees',
-  description:
-    'Get access to our exclusive app that allows you to send unlinmited transactions without getting charged any fees.',
-  buttonLabel: 'Get started',
-  imgStart: true,
-  img: '/images/svg-1.svg',
-  alt: 'Car',
-  dark: false,
-  primary: false,
-  darkText: true,
-};
+export const text = {
+    value: "I am an explorer at heart with an insatiable need to learn and create. I've been lucky enough to go on some pretty neat adventures--including hiking 2/3 of the Appalachian Trail and the Annapurna Circuit in Nepal, cycling over 4,000 miles in SE Asia and spending a year climbing and cycling all over the US while living in a van. I've visited 49 of the 50 states (Hawaii is the last), visted about 15 countries, served in two branches of the military and lived all over the place. I've recently settled down a bit to focus on my career as a developer, but I'm sure it's only a matter of time before I get the travel bug again."
+}

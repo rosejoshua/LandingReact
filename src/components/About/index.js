@@ -1,21 +1,27 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
 import {
   AboutContainer,
+  AboutWrapper,
   Heading,
-  InfoWrapper,
+  Img,
+  ImgWrap,
+  TextWrapper,
+  TextWrapper2,
 } from './aboutElements';
+import {text} from './data';
 
 const About = () => {
   return (
     <>
       <AboutContainer id='about'>
-        <InfoWrapper>
+        <AboutWrapper>
           <Heading>About Me</Heading>
-
-          I'm an infinitely curious wanderer trying my best to be a good member of my community. 
-
-        </InfoWrapper>
+          <ImgWrap>
+          <Img src='/images/collage.png' />
+          <TextWrapper2>{text.value}</TextWrapper2>
+          </ImgWrap>
+          <TextWrapper>{text.value}</TextWrapper>
+        </AboutWrapper>
       </AboutContainer>
     </>
   );
